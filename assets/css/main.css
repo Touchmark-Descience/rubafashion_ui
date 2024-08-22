@@ -16095,9 +16095,10 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .account-form-input span {
   position: absolute;
-  right: 20px;
-  top: 0;
-  height: 50px;
+  /* right: 20px !important; */
+  top: 30% !important;
+  transform: translate(-50%, -50%);
+  /* height: 50px; */
   display: inline-block;
   /* line-height: 50px; */
   font-size: 14px;
@@ -20282,4 +20283,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 
-/*Recaptcha*/
+.form-control-pwd::placeholder {
+  display: flex;
+  align-items: center;
+}
