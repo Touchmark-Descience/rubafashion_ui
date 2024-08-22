@@ -16022,21 +16022,21 @@ input:focus::placeholder, textarea:focus::placeholder {
   display: inline-block;
 }
 .account-main {
-  padding: 65px 80px 70px;
+  padding: 65px 80px 40px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .account-main {
-    padding: 65px 60px 70px;
+    padding: 65px 60px 40px;
   }
 }
 @media (max-width: 767px) {
   .account-main {
-    padding: 65px 30px 70px;
+    padding: 65px 30px 40px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .account-main {
-    padding: 65px 50px 70px;
+    padding: 65px 50px 40px;
   }
 }
 .account-title {
