@@ -9049,7 +9049,7 @@ fieldset:disabled .btn {
 
 .text-primary {
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important
+    color: #EE2E61 !important
 }
 
 .text-secondary {
@@ -12634,3 +12634,7 @@ fieldset:disabled .btn {
 
 /*# sourceMappingURL=bootstrap.min.css.map */
 
+.log-100 {
+    width: 100% !important;
+    height: 50px;
+}
