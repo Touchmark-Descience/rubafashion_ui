@@ -16096,7 +16096,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 .account-form-input span {
   position: absolute;
   /* right: 20px !important; */
-  top: 30% !important;
+  top: 35% !important;
   transform: translate(-50%, -50%);
   /* height: 50px; */
   display: inline-block;
@@ -20287,3 +20287,4 @@ input:focus::placeholder, textarea:focus::placeholder {
   display: flex;
   align-items: center;
 }
+
