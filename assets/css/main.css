@@ -10397,7 +10397,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .theme-btn-medium {
-  height: 45px !important;
+  height: 44px !important;
   line-height: 45px !important;
   padding: 0 20px;
 }
@@ -18256,7 +18256,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 
 .account-form-input input {
   width: 100%;
-  height: 50px;
+  height: 48px;
   line-height: 50px;
   border: 1px solid rgba(4, 0, 23, 0.1);
   border-radius: 6px;
@@ -23115,7 +23115,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   align-items: center;
 }
 
-..account-title-login {
+.account-title-login {
   font-size: 32px;
   /* margin-bottom: 30px; */
 }
