@@ -26,7 +26,6 @@
         }
     </style>
 
-
 </head>
 
 <body>
@@ -110,9 +109,9 @@
         <div class="container success">
             <div class="row justify-content-center">
                 <div class="col-md-5">
-                    <div class="message-box _success">
+                    <div class="message-box _success d-flex flex-column align-items-center">
                         <div id="success-animation"></div> <!-- Container for Lottie animation -->
-                        <h2>Your payment was successful</h2>
+                        <h2>Your payment is successful</h2>
                         <p>Thank you for your payment. We will<br>
                             be in contact with more details shortly.</p>
                         <div class="h3_about-button pt-4">
@@ -149,20 +148,20 @@
     <script src="assets/js/main.js"></script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
 
     <script>
-        var animation = lottie.loadAnimation({
-            container: document.getElementById('success-animation'), // the DOM element
-            renderer: 'svg',
-            loop: false,
-            autoplay: true,
-            path: './assets/img/success/success-animation.json' // the path to your animation file
+        document.addEventListener('DOMContentLoaded', function() {
+            var animation = lottie.loadAnimation({
+                container: document.getElementById('success-animation'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: 'assets/img/success/success-animation.json'
+            });
         });
     </script>
 
-
 </body>
-
 
 </html>

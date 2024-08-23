@@ -109,7 +109,8 @@
                     <div class="col-xl-7 col-lg-8 col-md-10">
                         <div class="account-wrap border-top border-3 border-primary">
                             <div class="account-main-pwd">
-                                <div>
+                                <div class="d-flex flex-column align-items-center">
+                                <div id="password-reset-link-animation"></div> <!-- Container for Lottie animation -->
                                 <h5>Password reset link has been sent to your email</h5>
                                     <p class="text-black">
                                         If your email address is associated with an account in our system, we have sent
@@ -235,7 +236,7 @@
     <script src="assets/js/appear.min.js"></script>
     <script src="assets/js/main.js"></script>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!--Navbar - Active-->
@@ -265,6 +266,17 @@
         });
     </script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var animation = lottie.loadAnimation({
+                container: document.getElementById('password-reset-link-animation'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: 'assets/img/success/link_sent_to_mail.json'
+            });
+        });
+    </script>
 
 </body>
 

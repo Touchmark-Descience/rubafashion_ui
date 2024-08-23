@@ -23097,11 +23097,13 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 #success-animation {
   width: 200px;
-  /* Adjust width */
-  height: 200px;
-  /* Adjust height */
-  margin: 0 auto 20px;
-  /* Center the animation and add spacing */
+  margin-bottom: 20px;
+}
+
+#password-reset-link-animation {
+  width: 260px;
+  margin-bottom: 60px;
+  margin-right: 60px;
 }
 
 .h3_main-menu ul li a.active,
