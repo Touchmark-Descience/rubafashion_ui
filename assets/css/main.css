@@ -91,7 +91,7 @@ a:focus,
 
 a:focus,
 a:hover {
-  color: inherit;
+  /* color: inherit; */
   text-decoration: none;
 }
 
@@ -7138,7 +7138,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .h3_category-item {
   background: #FFF;
-  border: 1px solid #F9B8CA;
+  border: 2px solid #F9B8CA;
   padding: 40px;
   display: flex;
   gap: 25px;
@@ -23130,4 +23130,247 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .password-reset-modal-popup h5 {
   font-size: 24px;
+}
+
+.welcome-note-section .h3_about-img-shape-1 {
+  left: -100px;
+  top: 40px;
+}
+
+.welcome-note-section .h3_about-wrap-shape {
+  left: 650px;
+  bottom: 40px;
+}
+
+.welcome-note-section .h3_about-img-shape-2 {
+  top: 70px;
+  right: 50px;
+}
+
+.mylearning-progressbar-section {
+  margin-bottom: 5px;
+}
+
+.mylearning-progressbar-section .progress {
+  background: #F9B8CA;
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  /* padding: 0 5px; */
+  display: flex;
+  height: 12px;
+  width: 420px;
+}
+
+.mylearning-progressbar-section .progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #EE2E61;
+  height: 12px;
+  width: 0;
+}
+
+.mylearning-progressbar-section .initial-progress-value {
+  animation: initialload 0s normal forwards;
+}
+
+.mylearning-progressbar-section .completedpercentagedetails {
+  font-size: 14px;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 68%; }
+}
+
+@keyframes initialload {
+  0% { width: 0; }
+  100% { width: 1%; }
+}
+
+.main-learning-content-section {
+  border-right: 1px solid #F9B8CA;
+}
+
+.next-up-section {
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0s linear !important;
+}
+
+.next-up-section .fa-forward {
+  font-size: 10px;
+}
+
+.h3_blog-content-title:hover .next-up-section {
+  border-color: var(--clr-theme-primary-3);
+}
+
+.continue-learning-section .section-area-3 .section-title {
+  font-size: 40px;
+}
+
+.continue-learning-section .h3_blog-content .overall-progress{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--clr-body-text);
+}
+
+.continue-learning-section .learning-content-main-section {
+  padding: 0 40px;
+}
+
+.continue-learning-section .vertical-line {
+  width: 1px;
+  background-color: grey; 
+  height: 100%;
+}
+
+/* User Profile CSS Starts */
+
+.view-profile-section {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #EE2E61;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative; 
+  cursor: pointer;
+}
+
+.view-profile-section .menu {
+  position: absolute;
+  top: calc(100% + 10px); 
+  right: 0;
+  width: 180px; 
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  transition: 300ms;
+  border-radius: 10px; 
+  border-top: 4px solid #EE2E61;
+  z-index: 999;
+}
+
+/* .view-profile-section .menu::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #EE2E61;
+  z-index: -1;
+} */
+
+.view-profile-section .menu.active {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.view-profile-section .menu ul {
+  margin: 0;
+  padding: 8px 0;
+  list-style: none;
+}
+
+.view-profile-section .menu ul li {
+  list-style: none;
+}
+
+.view-profile-section .menu ul li:hover {
+  background: #eee;
+}
+
+.view-profile-section .menu ul li a {
+  text-decoration: none;
+  color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  padding: 4px 15px;
+  gap: 6px;
+  font-size: 16px;
+}
+
+.view-profile-section .menu ul li a i {
+  font-size: 1.2em;
+}
+
+/* User Profile CSS Ends */
+
+.welcome-note-section {
+    background-color: var(--clr-color-lightPink);
+    min-height: 180px;
+    overflow: hidden;
+}
+
+.welcome-note-section::before {
+  position: absolute;
+  bottom: -70px;
+  left: -90px;
+  content: "";
+  width: 209px;
+  height: 200px;
+  border-radius: 50%;
+  background: #F9B8CA;
+  z-index: -1;
+  animation: banner_before 0.7s linear 0s;
+}
+
+.welcome-note-section::after {
+  position: absolute;
+  top: -252px;
+  right: -210px;
+  content: "";
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: #F9B8CA;
+  z-index: -1;
+  animation: banner_after 0.7s linear 0s;
+}
+
+.user-profile-class {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #EE2E61;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative; 
+  cursor: pointer;
+}
+
+.welcome-note-section .add_occupation_and_interests {
+  font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #5022C3;
+}
+
+.continue-learning-section .learning-content-main-section {
+  border-right: 2px solid #FDE7ED;
 }
