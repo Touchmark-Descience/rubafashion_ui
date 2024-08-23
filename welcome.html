@@ -1107,9 +1107,16 @@
         let profileSection = document.querySelector('.view-profile-section');
         let dropdownMenu = document.querySelector('.view-profile-section .menu');
 
-        profileSection.onclick = function () {
+        profileSection.onclick = function (event) {
+            event.stopPropagation();  // Prevent the click event from bubbling up to the document
             dropdownMenu.classList.toggle('active');
-        }
+        };
+
+        document.onclick = function (event) {
+            if (!profileSection.contains(event.target)) {
+                dropdownMenu.classList.remove('active');
+            }
+        };
 
     </script>
 
