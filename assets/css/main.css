@@ -18126,6 +18126,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   margin-right: auto;
   border-radius: 10px;
   overflow: hidden;
+  border-top: solid 4px #28a745;
 }
 
 .account-top {
@@ -23064,7 +23065,8 @@ only screen and (min-width: 768px) and (max-width: 991px),
   width: 100%;
   text-align: center;
   margin: 40px auto;
-  border-bottom: solid 4px #28a745;
+  border-top: solid 4px #28a745;
+  border-radius: 10px;
 }
 
 ._success i {
@@ -23096,8 +23098,8 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 #success-animation {
-  width: 200px;
-  margin-bottom: 20px;
+  width: 140px;
+  margin-bottom: 0px;
 }
 
 #password-reset-link-animation {
