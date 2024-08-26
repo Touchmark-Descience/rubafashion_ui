@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Login | Ruba Fashion Academy</title>
+    <title>Thank You Reset Password | Ruba Fashion Academy</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/title-logo.png">
@@ -102,20 +102,25 @@
 
     <main>
 
-        <!-- forget password area start -->
+        <!-- reset password area start -->
         <div class="account-area pt-90 pb-120">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8 col-md-10">
-                        <div class="account-wrap border-3">
-                            <div class="account-main-pwd password-reset-modal-popup">
-                                <div class="d-flex flex-column align-items-center text-center">
-                                <div id="password-reset-link-animation"></div> <!-- Container for Lottie animation -->
-                                <h5>Password reset link has been sent<br> to your email</h5>
-                                    <p class="text-black">
-                                        If your email address is associated with an account in our system, we have sent
-                                        you instrutions on how to reset your password.
-                                    </p>
+                        <div class="account-wrap">
+                            <div class="account-main">
+                                <h3 class="account-title">Reset Password</h3>
+                                <div class="account-form">
+                                    <div class="d-flex">
+                                        <div id="success-animation"></div>
+                                        <div class="account-form-item">
+                                            <p class="pwd-p">Password Reset Successful</p>
+                                            <p>You can now log in with your new password.</p>
+                                        </div>
+                                    </div>
+                                    <div class="account-form-button">
+                                        <button type="submit" class="btn btn-primary log-100">Go to Profile</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +128,7 @@
                 </div>
             </div>
         </div>
-        <!-- forget password area end -->
+        <!-- reset password area end -->
 
     </main>
 
@@ -236,7 +241,9 @@
     <script src="assets/js/appear.min.js"></script>
     <script src="assets/js/main.js"></script>
 
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!--Navbar - Active-->
@@ -266,18 +273,20 @@
         });
     </script>
 
+
     <!--animation-->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var animation = lottie.loadAnimation({
-                container: document.getElementById('password-reset-link-animation'),
+                container: document.getElementById('success-animation'),
                 renderer: 'svg',
                 loop: true,
                 autoplay: true,
-                path: 'assets/img/success/link_sent_to_mail.json'
+                path: 'assets/img/success/success-animation.json'
             });
         });
     </script>
+
 
 </body>
 

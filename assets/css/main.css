@@ -18126,7 +18126,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   margin-right: auto;
   border-radius: 10px;
   overflow: hidden;
-  border-top: solid 4px #28a745;
+  border-top: solid 4px #EE2E61;
 }
 
 .account-top {
@@ -23373,4 +23373,12 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .continue-learning-section .learning-content-main-section {
   border-right: 2px solid #FDE7ED;
+}
+
+.pwd-p {
+  font-family: "Roboto", sans-serif;
+  color: var(--clr-body-heading);
+  margin-top: 0px;
+  line-height: 1.2;
+  font-weight: 700;
 }
