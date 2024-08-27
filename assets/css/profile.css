@@ -1,0 +1,138 @@
+.editprofilesection {
+    width: 128px;
+    position: relative;
+}
+
+.editprofilesection .profile-pic {
+    width: 200px;
+    max-height: 200px;
+    display: inline-block;
+}
+
+.editprofilesection .file-upload {
+    display: none;
+}
+.editprofilesection .circle {
+    border-radius: 50% !important;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    background: url(../img/profile/user-profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.editprofilesection img {
+    max-width: 100%;
+    height: auto;
+}
+.editprofilesection .p-image {
+    background-color: #EE2E61;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+position: absolute;
+top: 0px;
+right: 0px;
+color: #666666;
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.editprofilesection .p-image:hover {
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.editprofilesection .upload-button {
+font-size: 1.2em;
+}
+
+.editprofilesection .upload-button:hover {
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+color: #999;
+}
+
+
+
+.profiledetailssection .form-capsule .form-group {
+position: relative;
+}
+
+.profiledetailssection .form-capsule .form-group label {
+position: absolute;
+font-size: 0.8em;
+top: 0px;
+width: 100%;
+padding: 0 10px;
+margin: 5px 0 10px 0;
+opacity: 0;
+transition: opacity 0.2s ease-out;
+-webkit-backface-visibility: hidden;
+pointer-events: none;
+}
+
+.profiledetailssection .form-capsule .show-label label {
+opacity: 1;
+}
+
+.profiledetailssection .form-capsule .form-control {
+height: 50px;
+padding: 15px 10px;
+box-shadow: 0 0 0 2px transparent;  
+transition: all 0.2s ease-out;
+}
+
+.profiledetailssection .form-capsule .form-control:focus{
+box-shadow: 0 0 0 1px #EE2E61;
+outline: transparent;
+border-color: transparent;
+}
+
+.profiledetailssection .form-capsule .show-label .form-control {
+padding-top: 25px;
+padding-bottom: 5px;
+}
+
+.gendersection-menu .dropdown-item { 
+position: relative;
+overflow: hidden; 
+cursor: pointer; 
+}
+
+.gendersection-menu input { 
+visibility: hidden; 
+position: absolute; 
+left: -30px; 
+}
+
+.gendersection-menu i { 
+font-weight: normal; 
+font-style: normal; 
+display: block; 
+}
+
+.dropdown-item.active {
+background-color: #555; 
+color: #fff;
+}
+
+.maximum-size-image-text {
+font-size: 14px;
+margin-top: 10px;
+}
+
+.remove-photo-section a, .add-work-preference-section a, .add-additional-info-section a {
+border: 1px solid #EE2E61; 
+background-color: transparent;
+color: #000;
+}
+
+.remove-photo-section a:hover a, .add-work-preference-section a:hover a, .add-additional-info-section a:hover a {
+color: #fff !important;
+}
+
+.additional-info-primary-text {
+font-size: 18px;
+}
