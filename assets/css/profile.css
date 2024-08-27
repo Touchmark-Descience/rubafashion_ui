@@ -119,6 +119,7 @@
 .maximum-size-image-text {
   font-size: 14px;
   margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .remove-photo-section a,
@@ -137,14 +138,14 @@
   background-color: transparent !important;
   background: transparent !important;
   z-index: -1 !important;
-    position: absolute !important;
+  position: absolute !important;
 }
 
 .remove-photo-section .theme-btn:hover .theme-btn,
 .add-work-preference-section .theme-btn:hover .theme-btn,
 .add-additional-info-section .theme-btn:hover .theme-btn {
-    z-index: -1 !important;
-    position: absolute !important;
+  z-index: -1 !important;
+  position: absolute !important;
 }
 
 .additional-info-primary-text {
@@ -152,7 +153,7 @@
 }
 
 .profile-info-sescondary-text {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .gendersection .dropdown-toggle {
@@ -202,6 +203,35 @@
 }
 
 .profiledetailssection label {
-    color: #000;
-    margin-bottom: 10px !important;
+  color: #000;
+  margin-bottom: 10px !important;
+}
+
+.outline-button-section {
+  border-radius: 6px;
+  background: var(--clr-theme-primary-3);
+  box-shadow: 0px 2px 5px 0px rgba(32, 42, 61, 0.2);
+  height: 44px !important;
+  line-height: 45px !important;
+  padding: 0 20px;
+  background: var(--clr-theme-primary);
+  color: var(--clr-common-white);
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 25px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-bottom: 0;
+  text-align: center;
+  touch-action: manipulation;
+  transition: all 0.3s ease 0s;
+  white-space: nowrap;
+  border: none;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
