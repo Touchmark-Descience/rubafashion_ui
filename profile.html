@@ -109,7 +109,7 @@
         <main>
 
             <!-- blog area start -->
-            <section class="h3_blog-area pt-135 pb-110">
+            <section class="h3_blog-area pt-60 pb-60">
                 <div class="container">
                     <div class="row align-items-end mb-30">
                         <div class="col-md-9">
@@ -135,15 +135,15 @@
                                 </div>
                                 <div class="d-flex my-3">
                                     <div
-                                        class="h3_header-btn d-none d-sm-block">
+                                        class="h3_header-btn d-flex">
                                         <a href="./login.html"
                                             class="header-btn theme-btn theme-btn-medium theme-btn-3">Change
                                             Photo</a>
                                     </div>
                                     <div
-                                        class="h3_header-btn d-none d-sm-block ms-3 remove-photo-section">
+                                        class="h3_header-btn d-flex ms-3 remove-photo-section">
                                         <a href="./login.html"
-                                            class="header-btn theme-btn theme-btn">Remove
+                                            class="header-btn theme-btn theme-btn-medium theme-btn-3">Remove
                                             Photo</a>
                                     </div>
                                 </div>
@@ -156,7 +156,7 @@
                                     for to make sure you find opportunities that
                                     are right for you.</p>
                                 <div
-                                    class="h3_header-btn d-none d-sm-block add-work-preference-section">
+                                    class="h3_header-btn d-flex add-work-preference-section">
                                     <a href="./login.html"
                                         class="header-btn theme-btn theme-btn"><i
                                             class="fa fa-plus me-2"
@@ -172,7 +172,7 @@
                                     for to make sure you find opportunities that
                                     are right for you.</p>
                                 <div
-                                    class="h3_header-btn d-none d-sm-block add-additional-info-section">
+                                    class="h3_header-btn d-flex add-additional-info-section">
                                     <a href="./login.html"
                                         class="header-btn theme-btn theme-btn"><i
                                             class="fa fa-plus me-2"
@@ -183,85 +183,111 @@
                         </div>
                         <div
                             class="col-xl-8 col-lg-8 col-md-8 profiledetailssection">
-                            <div class="p-5 h3_course-item">
-                                <form class="form-capsule" role="form">
-                                    <div class="row mb-3">
-                                        <div class="col-sm-6">
-                                            <label for="firstname">First
-                                                Name</label>
-                                            <div class="form-group">
-                                                <input type="text"
-                                                    class="form-control"
-                                                    id="firstname"
-                                                    placeholder="First Name"
-                                                    value="Chandru">
+                            <div class="profiledetailscontainersection">
+                                <h3 class="additional-info-primary-text">Profile Details:</h3>
+                                <div class="p-5 h3_course-item" style="overflow: visible;">                                    
+                                    <form class="form-capsule" role="form">
+                                        <div class="row">
+                                            <div class="col-sm-6 mb-3">
+                                                <label for="firstname">First
+                                                    Name</label>
+                                                <div class="form-group">
+                                                    <input type="text"
+                                                        class="form-control"
+                                                        id="firstname"
+                                                        placeholder="First Name"
+                                                        value="Chandru">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 mb-3">
+                                                <label for="lastname">Last
+                                                    Name</label>
+                                                <div class="form-group">
+                                                    <input type="text"
+                                                        class="form-control"
+                                                        id="lastname"
+                                                        placeholder="Last Name">
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
-                                            <label for="lastname">Last
-                                                Name</label>
-                                            <div class="form-group">
-                                                <input type="text"
-                                                    class="form-control"
-                                                    id="lastname"
-                                                    placeholder="Last Name">
+                                        <div class="row">
+                                            <div class="col-sm-6 mb-3">
+                                                <label for="email">Email</label>
+                                                <div class="form-group">
+                                                    <input type="email"
+                                                        class="form-control"
+                                                        id="email"
+                                                        placeholder="Email">
+                                                </div>
                                             </div>
+                                            <div class="col-sm-6 mb-3">
+                                                <label for="genderDropdown">Gender</label>
+                                                <div class="form-group dropdown gendersection" style="position: relative;">
+                                                    <button class="btn btn-light form-control dropdown-toggle" type="button" id="genderDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span id="genderSelectedText">Select Gender</span>
+                                                    </button>
+                                                    <div class="dropdown-menu gendersection-menu" aria-labelledby="genderDropdown">
+                                                        <button class="dropdown-item" type="button" data-value="male">Male</button>
+                                                        <button class="dropdown-item" type="button" data-value="female">Female</button>
+                                                        <button class="dropdown-item" type="button" data-value="other">Others</button>
+                                                    </div>
+                                                </div>
+                                            </div>                                                                             
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6 mb-3">
+                                                <label for="pronouns">Phone Number</label>
+                                                <div class="form-group">
+                                                    <input type="text"
+                                                        class="form-control"
+                                                        id="pronouns"
+                                                        placeholder="Enter your number">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 mb-3">
+                                                <label for="locationDropdown">Location</label>
+                                                <div class="form-group dropdown gendersection" style="position: relative;">
+                                                    <button class="btn btn-light form-control dropdown-toggle" type="button" id="locationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span id="locationSelectedText">Select your city</span>
+                                                    </button>
+                                                    <div class="dropdown-menu gendersection-menu" aria-labelledby="locationDropdown">
+                                                        <button class="dropdown-item" type="button" data-value="new-york">Chennai</button>
+                                                        <button class="dropdown-item" type="button" data-value="los-angeles">Coimbatore</button>
+                                                        <button class="dropdown-item" type="button" data-value="chicago">Madurai</button>
+                                                        <button class="dropdown-item" type="button" data-value="houston">Salem</button>
+                                                        <button class="dropdown-item" type="button" data-value="miami">Theni</button>
+                                                        <button class="dropdown-item" type="button" data-value="houston">Dindigul</button>
+                                                        <button class="dropdown-item" type="button" data-value="miami">Erode</button>
+                                                    </div>
+                                                </div>
+                                            </div>                                        
+                                        </div>
+                                    </form>
+                                    <div class="mt-5">
+                                        <div
+                                            class="h3_header-btn d-none d-sm-flex justify-content-start">
+                                            <a href="./login.html"
+                                                class="header-btn theme-btn theme-btn-medium theme-btn-3">Save Changes</a>
                                         </div>
                                     </div>
-                                    <div class="row mb-3">
-                                        <div class="col-sm-6">
-                                            <label for="email">Email</label>
-                                            <div class="form-group">
-                                                <input type="email"
-                                                    class="form-control"
-                                                    id="email"
-                                                    placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <!-- <div class="form-group col-sm-6">
-                                        <label for="pwd">Gender</label>
-                                        <input type="password"
-                                            class="form-control" id="pwd"
-                                            placeholder="Password">
-                                    </div> -->
-                                        <div class="dropdown gendersection"
-                                            style="width:200px; margin:20px auto;">
-                                            <button type="button"
-                                                class="btn btn-light dropdown-toggle"
-                                                data-toggle="dropdown">
-                                                <ins>Select Gender</ins>
-                                            </button>
-                                            <div
-                                                class="dropdown-menu gendersection-menu">
-
-                                                <label class="dropdown-item">
-                                                    <input class="jRadioGender"
-                                                        type="radio"
-                                                        value="male"
-                                                        name="gender">
-                                                    <i>Male</i>
-                                                </label>
-
-                                                <label class="dropdown-item">
-                                                    <input class="jRadioGender"
-                                                        type="radio"
-                                                        value="female"
-                                                        name="gender">
-                                                    <i>Female</i>
-                                                </label>
-
-                                                <label class="dropdown-item">
-                                                    <input class="jRadioGender"
-                                                        type="radio"
-                                                        value="other"
-                                                        name="gender">
-                                                    <i>Others</i>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
+                            <div class="educationdetailscontainersection mt-5">
+                                <h3 class="additional-info-primary-text">Education:</h3>
+                                <div class="p-5 h3_course-item my-3">
+                                    <h5 class="profile-info-sescondary-text">Credentials</h5>
+                                    <div>
+                                        <p>Add your educational background here to let employers know where you studied or are currently studying.</p>
+                                        <div
+                                    class="h3_header-btn d-flex add-work-preference-section">
+                                    <a href="./login.html"
+                                        class="header-btn theme-btn theme-btn"><i
+                                            class="fa fa-plus me-2"
+                                            aria-hidden="true"></i>Add education</a>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>                                 
                         </div>
                     </div>
                 </div>
@@ -454,6 +480,30 @@
         if((e.keyCode ? e.keyCode : e.which) == 13){
             $(this).trigger('click');
         }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gender Dropdown
+            const genderOptions = document.querySelectorAll('#genderDropdown ~ .dropdown-menu .dropdown-item');
+            const genderSelectedText = document.getElementById('genderSelectedText');
+
+            genderOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    genderSelectedText.textContent = this.textContent.trim();
+                    genderSelectedText.setAttribute('data-value', this.getAttribute('data-value'));
+                });
+            });
+
+            // Location Dropdown
+            const locationOptions = document.querySelectorAll('#locationDropdown ~ .dropdown-menu .dropdown-item');
+            const locationSelectedText = document.getElementById('locationSelectedText');
+
+            locationOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    locationSelectedText.textContent = this.textContent.trim();
+                    locationSelectedText.setAttribute('data-value', this.getAttribute('data-value'));
+                });
+            });
         });
 
     </script>
