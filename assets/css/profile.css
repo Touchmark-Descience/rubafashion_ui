@@ -1,138 +1,207 @@
 .editprofilesection {
-    width: 128px;
-    position: relative;
+  width: 128px;
+  position: relative;
 }
 
 .editprofilesection .profile-pic {
-    width: 200px;
-    max-height: 200px;
-    display: inline-block;
+  width: 200px;
+  max-height: 200px;
+  display: inline-block;
 }
 
 .editprofilesection .file-upload {
-    display: none;
+  display: none;
 }
 .editprofilesection .circle {
-    border-radius: 50% !important;
-    overflow: hidden;
-    width: 128px;
-    height: 128px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    position: relative;
-    background: url(../img/profile/user-profile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  border-radius: 50% !important;
+  overflow: hidden;
+  width: 128px;
+  height: 128px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  background: url(../img/profile/user-profile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .editprofilesection img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 .editprofilesection .p-image {
-    background-color: #EE2E61;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-position: absolute;
-top: 0px;
-right: 0px;
-color: #666666;
-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
-display: flex;
-justify-content: center;
-align-items: center;
+  background-color: #ee2e61;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #666666;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .editprofilesection .p-image:hover {
-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .editprofilesection .upload-button {
-font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .editprofilesection .upload-button:hover {
-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
-color: #999;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: #999;
 }
 
-
-
 .profiledetailssection .form-capsule .form-group {
-position: relative;
+  position: relative;
 }
 
 .profiledetailssection .form-capsule .form-group label {
-position: absolute;
-font-size: 0.8em;
-top: 0px;
-width: 100%;
-padding: 0 10px;
-margin: 5px 0 10px 0;
-opacity: 0;
-transition: opacity 0.2s ease-out;
--webkit-backface-visibility: hidden;
-pointer-events: none;
+  position: absolute;
+  font-size: 0.8em;
+  top: 0px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 5px 0 10px 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
 }
 
 .profiledetailssection .form-capsule .show-label label {
-opacity: 1;
+  opacity: 1;
 }
 
 .profiledetailssection .form-capsule .form-control {
-height: 50px;
-padding: 15px 10px;
-box-shadow: 0 0 0 2px transparent;  
-transition: all 0.2s ease-out;
+  height: 50px;
+  padding: 15px 10px;
+  box-shadow: 0 0 0 2px transparent;
+  transition: all 0.2s ease-out;
 }
 
-.profiledetailssection .form-capsule .form-control:focus{
-box-shadow: 0 0 0 1px #EE2E61;
-outline: transparent;
-border-color: transparent;
+.profiledetailssection .form-capsule .form-control:focus {
+  box-shadow: 0 0 0 1px #ee2e61;
+  outline: transparent;
+  border-color: transparent;
 }
 
 .profiledetailssection .form-capsule .show-label .form-control {
-padding-top: 25px;
-padding-bottom: 5px;
+  padding-top: 25px;
+  padding-bottom: 5px;
 }
 
-.gendersection-menu .dropdown-item { 
-position: relative;
-overflow: hidden; 
-cursor: pointer; 
+.gendersection-menu .dropdown-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.gendersection-menu input { 
-visibility: hidden; 
-position: absolute; 
-left: -30px; 
+.gendersection-menu input {
+  visibility: hidden;
+  position: absolute;
+  left: -30px;
 }
 
-.gendersection-menu i { 
-font-weight: normal; 
-font-style: normal; 
-display: block; 
+.gendersection-menu i {
+  font-weight: normal;
+  font-style: normal;
+  display: block;
 }
 
 .dropdown-item.active {
-background-color: #555; 
-color: #fff;
+  background-color: #555;
+  color: #fff;
 }
 
 .maximum-size-image-text {
-font-size: 14px;
-margin-top: 10px;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
-.remove-photo-section a, .add-work-preference-section a, .add-additional-info-section a {
-border: 1px solid #EE2E61; 
-background-color: transparent;
-color: #000;
+.remove-photo-section a,
+.add-work-preference-section a,
+.add-additional-info-section a {
+  border: 1px solid #ee2e61 !important;
+  background-color: transparent !important;
+  color: #000 !important;
+  background: transparent !important;
 }
 
-.remove-photo-section a:hover a, .add-work-preference-section a:hover a, .add-additional-info-section a:hover a {
-color: #fff !important;
+.remove-photo-section a:hover a,
+.add-work-preference-section a:hover a,
+.add-additional-info-section a:hover a {
+  color: #000 !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  z-index: -1 !important;
+    position: absolute !important;
+}
+
+.remove-photo-section .theme-btn:hover .theme-btn,
+.add-work-preference-section .theme-btn:hover .theme-btn,
+.add-additional-info-section .theme-btn:hover .theme-btn {
+    z-index: -1 !important;
+    position: absolute !important;
 }
 
 .additional-info-primary-text {
-font-size: 18px;
+  font-size: 24px;
+}
+
+.profile-info-sescondary-text {
+    font-size: 20px;
+}
+
+.gendersection .dropdown-toggle {
+  width: 100%;
+  text-align: left;
+  height: calc(1.5em + 0.75rem + 2px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  background-color: #fff;
+  color: #495057;
+  font-size: 1rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.gendersection .dropdown-menu {
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.gendersection .dropdown-item {
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  font-size: 1rem;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.gendersection .dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.gendersection .dropdown-toggle:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.gendersection-menu.show {
+  transform: translate3d(0px, 58px, 0px) !important;
+  z-index: 10 !important;
+}
+
+.profiledetailssection label {
+    color: #000;
+    margin-bottom: 10px !important;
 }
