@@ -23395,3 +23395,19 @@ only screen and (min-width: 768px) and (max-width: 991px),
 .reset-pwd-content {
   margin-top: -15px;
 }
+
+ .setting-content {
+  font-family: "Roboto", sans-serif;
+  color: var(--clr-body-heading);
+  margin-top: 0px;
+  line-height: 1.2;
+  margin-bottom: 0px;
+}
+
+.bg-lite {
+  background-color: #FDE7ED;
+}
+
+.container-gap {
+  gap: 15px; 
+}
