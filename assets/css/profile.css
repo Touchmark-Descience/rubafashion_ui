@@ -30,8 +30,8 @@
 }
 .editprofilesection .p-image {
   background-color: #ee2e61;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   position: absolute;
   top: 0px;
@@ -47,6 +47,7 @@
 }
 .editprofilesection .upload-button {
   font-size: 1.2em;
+  width: 14px;
 }
 
 .editprofilesection .upload-button:hover {
@@ -150,6 +151,13 @@
 
 .additional-info-primary-text {
   font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.edit-section {
+  font-size: 18px;
+  margin-bottom: 0px;
+  cursor: pointer;
 }
 
 .profile-primary-text-section {
@@ -247,4 +255,137 @@
 .yeardropdownsection .dropdown-menu , .monthdropdownsection .dropdown-menu {
   height: 330px;
   overflow-y: scroll;
+}
+
+/* Icons */
+
+.social-media-section a {
+  color:#fff;
+  background: #DB6E82;
+  border-radius:4px;
+  text-align:center;
+  text-decoration:none;
+  font-family:fontawesome;
+  position: relative;
+  display: inline-block;
+  width:40px;
+  height:38px;
+  /* padding:5px 0; */
+  margin:0 2px;
+  -o-transition:all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+   -webkit-font-smoothing: antialiased;
+}
+
+.social-media-section a:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-media-section a:hover {
+  background: #ee2e61;
+}
+
+/* pop-up text */
+
+.social-media-section a span {
+  color:#fff;
+  position:absolute;
+  font-family:sans-serif;
+  bottom:0;
+  left:-25px;
+  right:-25px;
+  padding:5px 7px;
+  z-index:-1;
+  font-size:14px;
+  border-radius:2px;
+  background:#ee2e61;
+  visibility:hidden;
+  opacity:0;
+  -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* pop-up text arrow */
+
+.social-media-section a span:before {
+  content:'';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #ee2e61;
+  position:absolute;
+  bottom:-5px;
+  left:40px;
+}
+
+/* text pops up when icon is in hover state */
+
+.social-media-section a:hover span {
+  bottom:50px;
+  visibility:visible;
+  opacity:1;
+  z-index: 9;
+}
+
+/* font awesome icons */
+
+.social-media-section a:nth-of-type(1):before {
+content:'\f09a';
+}
+
+.social-media-section a:nth-of-type(2):before {
+content:'\f099';
+}
+
+.social-media-section a:nth-of-type(3):before {
+  content: '\f16d';
+}
+
+.social-media-section a:nth-of-type(4):before {
+  content:'\f17d';
+}
+
+.social-media-section a:nth-of-type(5):before {
+  content: '\f08c'
+}
+
+#additionalinfoModalCenterTitle {
+  font-size: 24px;
+}
+
+.modal-body-primary-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#additionalinfoModalCenter .modal-content {
+  padding: 15px 30px;
+}
+
+.characters-remaining-text {
+  color: #5b6780;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#addLinkButton {
+  border: 1px solid #DB6E82;
+  color: #DB6E82;
+}
+
+#addLinkButton:hover {
+  background-color: transparent;
+  color: #DB6E82;
+}
+
+.edit-section:hover {
+  color: #ee2e61;
 }
