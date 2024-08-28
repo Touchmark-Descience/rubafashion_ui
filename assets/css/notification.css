@@ -1,0 +1,55 @@
+.notificationcontainersection {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px 0px rgba(30, 30, 30, 0.1);
+}
+
+.notificationcontainersection .notificationsection {
+margin-bottom: 28px;
+}
+
+.notificationcontainersection .notificationsection .imagesection {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ee2e61;
+    margin-right: 15px;
+}
+
+.notificationcontainersection .notificationsection .imagesection img {
+    width: 30px;
+}
+
+.notificationcontainersection .notificationsection:last-child {
+    margin-bottom: 0px;
+    }
+
+.notificationsection h3 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.notificationsection h5 {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.notificationsection h6 {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.notification-primary-text {
+    font-size: 24px;
+  }
