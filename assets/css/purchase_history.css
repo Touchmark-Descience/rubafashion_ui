@@ -113,7 +113,7 @@
     background-color: transparent;
     color: #ee2e61 !important;
     border-radius: 6px;
-    padding: 5px 34px;
+    /* padding: 5px 34px; */
 }
 
 .invoice-disabled {
