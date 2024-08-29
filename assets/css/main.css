@@ -8500,13 +8500,15 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .h3_course-item-tag a {
-  position: absolute;
+  /* position: absolute; */
   left: 15px;
   top: 15px;
   border-radius: 6px;
-  background: var(--clr-theme-primary-3);
-  box-shadow: 0px 2px 5px 0px rgba(32, 42, 61, 0.4);
-  color: #fff;
+  /* background: var(--clr-theme-primary-3); */
+  background-color: #fde7ed;
+  /* box-shadow: 0px 2px 5px 0px rgba(32, 42, 61, 0.4); */
+  /* color: #fff; */
+  color: #000;
   padding: 2px 13px;
   display: inline-block;
   font-size: 13px;
@@ -8552,9 +8554,20 @@ only screen and (min-width: 768px) and (max-width: 991px),
   margin-right: 6px;
 }
 
+.enroll-now-button-section {
+  margin-top: 20px;
+}
+
 .h3_course-content-title {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 28px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.h3_course-content-description {
+  font-weight: 400;
+  font-size: 16px;
   margin-bottom: 25px;
 }
 
@@ -8666,7 +8679,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   display: block;
 }
 
-.h3_course-item:hover .h3_course-item-img img {
+.h3_course-item .h3_course-item-img-section:hover .h3_course-item-img img {
   transform: scale(1.2);
 }
 
@@ -23432,3 +23445,12 @@ only screen and (min-width: 768px) and (max-width: 991px),
 /* .notification-bell-section:hover .notification-bell-section-icon {
   color: #EE2E61;
 } */
+
+.h3_course-wrap .h3_course-content .course-tag-section {
+  background-color: red;
+  padding: 5px;
+}
+
+.h3_course-wrap .h3_course-content .course-tag-section h6 {
+  font-size: 14px;
+}
