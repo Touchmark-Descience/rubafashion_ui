@@ -9,7 +9,7 @@ $('#mobile-menu').meanmenu({
 
 $(window).on('scroll', function () {
 	var scroll = $(window).scrollTop();
-	if (scroll < 120) {
+	if (scroll < 80) {
 		$(".header-sticky").removeClass("sticky");
 	} else {
 		$(".header-sticky").addClass("sticky");
@@ -1115,3 +1115,7 @@ choiceArray.forEach((card) => {
 });
 
 })(jQuery);
+
+function redirectToNotification() {
+	window.location.href = "notification.html";
+}
