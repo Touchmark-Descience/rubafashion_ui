@@ -23412,3 +23412,23 @@ only screen and (min-width: 768px) and (max-width: 991px),
   gap: 15px; 
 }
 
+.notification-bell-section {
+  margin-right: 20px;
+  display: flex;
+  margin-top: 3px;
+}
+
+.notification-bell-section .notification-bell-section-icon {
+  font-size: 24px;
+  color: #1E1E1E;
+}
+
+.notification-bell-section:hover .notification-bell-section-icon {
+  animation: tada 1s;
+  animation-delay: 1s;
+}
+
+
+/* .notification-bell-section:hover .notification-bell-section-icon {
+  color: #EE2E61;
+} */
