@@ -1117,5 +1117,5 @@ choiceArray.forEach((card) => {
 })(jQuery);
 
 function redirectToNotification() {
-	window.location.href = "notification.html";
+    window.location.href = 'notification.html'; 
 }
