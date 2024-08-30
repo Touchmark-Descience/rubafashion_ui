@@ -88,6 +88,8 @@
 
 .view-all-courses-section, .view-all-courses-section:hover {
     color: #ee2e61;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .view-all-courses-section .arrow-down-icon {
@@ -121,4 +123,23 @@
     color: #6a6f73;
     margin-bottom: 0px;
     font-weight: 500;
+}
+
+.purchase-history-table .course-list {
+    margin-top: 10px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.purchase-history-table .course-list li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.purchase-history-table .arrow-down-icon {
+    transition: transform 0.3s;
+}
+
+.purchase-history-table .arrow-up-icon {
+    transform: rotate(180deg);
 }

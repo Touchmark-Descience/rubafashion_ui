@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/notification.css">
         <link rel="stylesheet" href="assets/css/purchase_history.css">
     </head>
 
@@ -53,71 +54,90 @@
         <!-- sidebar-information-area-end -->
 
         <!-- header area start -->
-        <header>
-            <div class="h3_header-area header-sticky">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-3 col-sm-7 col-6">
-                            <div class="h3_header-logo">
-                                <a href="index.html"><img
-                                        src="assets/img/logo/logo-ruba.png"
-                                        alt></a>
-                            </div>
+    <header>
+        <div class="h3_header-area header-sticky">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-sm-7 col-6">
+                        <div class="h3_header-logo">
+                            <a href="index.html"><img src="assets/img/logo/logo-ruba.png" alt=""></a>
                         </div>
-                        <div class="col-xl-6 d-none d-xl-block">
-                            <div class="h3_header-middle">
-                                <nav class="h3_main-menu mobile-menu"
-                                    id="mobile-menu">
+                    </div>
+                    <div class="col-xl-6 d-none d-xl-block">
+                        <div class="h3_header-middle">
+                            <nav class="h3_main-menu mobile-menu" id="mobile-menu">
+                                <ul>
+                                    <li>
+                                        <a href="index.html" class="active">Home</a>
+                                    </li>
+                                    <li><a href="#">About</a></li>
+                                    <li>
+                                        <a href="course.html">Courses</a>
+                                    </li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li class="">
+                                        <a href="#">Services</a>
+                                    </li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-5 col-6">
+                        <div class="h3_header-right">
+                            <div class="notification-bell-section d-none d-sm-flex" onclick="redirectToNotification()">
+                                <i class="fa-regular fa-bell notification-bell-section-icon"></i>
+                                <div class="notification-dropdown">
+                                    <div class="notification-header">
+                                        <h3>Notifications</h3>
+                                        <!-- <a href="#" class="settings-link">Settings</a> -->
+                                    </div>
+                                    <div class="notification-body">
+                                        <div class="notificationsection d-flex align-items-center justify-content-between">
+                                            <div class="col d-flex align-items-center content">
+                                                <div class="imagesection" style="background-image: url(assets/img/course/3/img-01.png);"></div>
+                                                <h3 class="mb-0">Join RUBA Fashion Academy Today!</h3>
+                                            </div>
+                                            <div class="notificationtimesection col-3 text-end">
+                                                <h6 class="mb-0">Today</h6>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="notificationsection d-flex align-items-center justify-content-between">
+                                            <div class="col d-flex align-items-center content">
+                                                <div class="imagesection" style="background-image: url(assets/img/course/3/img-02.png);"></div>
+                                                <h3 class="mb-0">Craftsmanship Awaits You!</h3>
+                                            </div>
+                                            <div class="notificationtimesection col-3 text-end">
+                                                <h6 class="mb-0">Yesterday</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="h3_header-btn d-none d-sm-flex view-profile-section">
+                                D
+                                <div class="menu">
                                     <ul>
-                                        <li>
-                                            <a href="index.html"
-                                                class="active">Home</a>
-                                        </li>
-                                        <li><a href="#">About</a></li>
-                                        <li>
-                                            <a href="course.html">Courses</a>
-                                        </li>
-                                        <li><a href="#">Gallery</a></li>
-                                        <li class>
-                                            <a href="#">Services</a>
-                                        </li>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="./profile.html"><i class="ph-bold ph-gear-six"></i>&nbsp;Profile</a></li>
+                                        <li><a href="./setting.html"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
+                                        <li><a href="./purchase_history.html"><i class="ph-bold ph-gear-six"></i>&nbsp;Purchase History</a></li>
+                                        <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Log Out</a></li>
                                     </ul>
-                                </nav>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-5 col-6">
-                            <div class="h3_header-right">
-                                <div class="notification-bell-section" onclick="redirectToNotification()">
-                                    <i class="fa-regular fa-bell notification-bell-section-icon"></i>
-                                    <div class="notification-dropdown">
-                                        <div class="notification-header">
-                                            <h3>Notifications</h3>
-                                            <!-- <a href="#" class="settings-link">Settings</a> -->
-                                        </div>
-                                        <div class="notification-body">
-                                            <!-- <p>No notifications.</p> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="h3_header-btn d-none d-sm-flex view-profile-section">
-                                    D
-                                    <div class="menu">
-                                        <ul>
-                                            <li><a href="./profile.html"><i class="ph-bold ph-gear-six"></i>&nbsp;Profile</a></li>
-                                            <li><a href="./setting.html"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
-                                            <li><a href="./updates.html"><i class="ph-bold ph-gear-six"></i>&nbsp;Updates</a></li>
-                                            <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Log Out</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            <div class="header-menu-bar d-xl-none ml-10">
+                                <span class="header-menu-bar-icon side-toggle">
+                                    <i class="fa-light fa-bars"></i>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- header area end -->
+        </div>
+    </header>
+    <!-- header area end -->
 
         <main>
             <!-- blog area start -->
@@ -156,11 +176,23 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>5 courses purchased <br><a href="#" class="view-all-courses-section">View all courses<i class="fa-solid fa-chevron-down ms-2 arrow-down-icon"></i></a></td>
+                                                    <td>
+                                                        5 courses purchased
+                                                        <br>
+                                                        <a href="#" class="view-all-courses-section" onclick="toggleCourses(event)">View all courses
+                                                            <i class="fa-solid fa-chevron-down ms-2 arrow-down-icon"></i>
+                                                        </a>
+                                                        <ul class="course-list" style="display: none;">
+                                                            <li>Advanced Scala and Functional Programming - ₹389</li>
+                                                            <li>Scala & Functional Programming Essentials - ₹389</li>
+                                                            <li>100 Days of Code: The Complete Python Pro Bootcamp - ₹389</li>
+                                                            <li>The Complete 2024 Web Development Bootcamp - ₹389</li>
+                                                            <li>Complete Agile Scrum Master Certification Training - ₹389</li>
+                                                        </ul>
+                                                    </td>
                                                     <td>Nov 22, 2023</td>
                                                     <td>₹1,945</td>
                                                     <td>₹1,945 UPI</td>
-                                                    <!-- <td align="center"><button class="btn receipt-button">Receipt</button></td> -->
                                                     <td align="center"><button class="btn invoice-button">Download Invoice</button></td>
                                                 </tr>
                                                 <tr>
@@ -180,13 +212,6 @@
                                                     <td align="center"><button class="btn invoice-button">Download Invoice</button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>4 courses purchased <br><a href="#" class="view-all-courses-section">View all courses<i class="fa-solid fa-chevron-down ms-2 arrow-down-icon"></i></a></td>
-                                                    <td>Nov 9, 2019</td>
-                                                    <td>₹1,680</td>
-                                                    <td>₹1,680 Net Banking</td>
-                                                    <!-- <td align="center"><button class="btn receipt-button">Receipt</button></td> -->
-                                                    <td align="center"><h5 class="invoice-disabled">Invoice unavailable</h5></td>
-                                                </tr>
                                                     <td>Play! Framework for Web Application Development</td>
                                                     <td>Nov 5, 2019</td>
                                                     <td>₹420</td>
@@ -374,25 +399,41 @@
 
     <script>
        document.addEventListener('DOMContentLoaded', function () {
-    const tabs = document.querySelectorAll('.nav-tabs li a');
-    const tabContents = document.querySelectorAll('.tab-pane');
+            const tabs = document.querySelectorAll('.purchasehistorycontainersection .nav-tabs li a');
+            const tabContents = document.querySelectorAll('.purchasehistorycontainersection .tab-pane');
 
-    tabs.forEach(tab => {
-        tab.addEventListener('click', function (event) {
-            event.preventDefault();
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function (event) {
+                    event.preventDefault();
 
-            // Remove active class from all tabs and hide all tab contents
-            tabs.forEach(t => t.parentElement.classList.remove('active'));
-            tabContents.forEach(content => content.classList.remove('active', 'show'));
+                    // Remove active class from all tabs and hide all tab contents
+                    tabs.forEach(t => t.parentElement.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active', 'show'));
 
-            // Add active class to the clicked tab and show corresponding content
-            tab.parentElement.classList.add('active');
-            const activeTabContent = document.querySelector(this.getAttribute('href'));
-            activeTabContent.classList.add('active', 'show');
+                    // Add active class to the clicked tab and show corresponding content
+                    tab.parentElement.classList.add('active');
+                    const activeTabContent = document.querySelector(this.getAttribute('href'));
+                    activeTabContent.classList.add('active', 'show');
+                });
+            });
         });
-    });
-});
-
+    </script>
+    <script>
+        function toggleCourses(event) {
+            event.preventDefault();
+            const courseList = event.target.closest('td').querySelector('.course-list');
+            const icon = event.target.querySelector('.arrow-down-icon');
+            
+            if (courseList.style.display === "none") {
+                courseList.style.display = "block";
+                icon.classList.add('fa-chevron-up');
+                icon.classList.remove('fa-chevron-down');
+            } else {
+                courseList.style.display = "none";
+                icon.classList.add('fa-chevron-down');
+                icon.classList.remove('fa-chevron-up');
+            }
+        }
     </script>
 
     </body>
