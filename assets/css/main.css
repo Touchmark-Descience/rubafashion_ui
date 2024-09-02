@@ -23582,8 +23582,8 @@ textarea:focus::placeholder {
 }
 
 .notification-dropdown .notificationsection .imagesection {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -23613,4 +23613,12 @@ textarea:focus::placeholder {
   .h3_blog-area {
     margin: 0 15px;
   }
+}
+
+.notificationsection h6 {
+  color: #c0c0c0;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  text-transform: uppercase;
 }

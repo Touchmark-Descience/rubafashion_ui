@@ -87,10 +87,64 @@
                         </div>
                         <div class="col-xl-3 col-sm-5 col-6">
                             <div class="h3_header-right">
-                                <div class="h3_header-btn d-none d-sm-block">
-                                    <a href="./login.html"
-                                        class="header-btn theme-btn theme-btn-medium theme-btn-3">Login<i
-                                            class="fa-light fa-arrow-up-right"></i></a>
+                                <div
+                                    class="notification-bell-section d-none d-sm-flex"
+                                    onclick="redirectToNotification()">
+                                    <i
+                                        class="fa-regular fa-bell notification-bell-section-icon"></i>
+                                    <div class="notification-dropdown">
+                                        <div class="notification-header">
+                                            <h3>Notifications</h3>
+                                            <!-- <a href="#" class="settings-link">Settings</a> -->
+                                        </div>
+                                        <div
+                                            class="notification-body notificationsection">
+                                            <div
+                                                class="d-flex align-items-center content notificationtimesection">
+                                                <div class="imagesection"
+                                                    style="background-image: url(assets/img/course/3/img-01.png);"></div>
+                                                <div class="text-start col">
+                                                    <h3 class="mb-0">Join RUBA
+                                                        Fashion Academy
+                                                        Today!</h3>
+                                                    <h6 class="mb-0 mt-1">Today</h6>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div
+                                                class="d-flex align-items-center content notificationtimesection">
+                                                <div class="imagesection"
+                                                    style="background-image: url(assets/img/course/3/img-02.png);"></div>
+                                                <div class="text-start col">
+                                                    <h3 class="mb-0">Craftsmanship Awaits You!</h3>
+                                                    <h6 class="mb-0 mt-1">Yesterday</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="h3_header-btn d-none d-sm-flex view-profile-section">
+                                    D
+                                    <div class="menu">
+                                        <ul>
+                                            <li><a href="./profile1.html"><i
+                                                        class="ph-bold ph-gear-six"></i>&nbsp;Profile</a></li>
+                                            <li><a href="./setting.html"><i
+                                                        class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
+                                                        <li><a href="./updates.html"><i
+                                                            class="ph-bold ph-gear-six"></i>&nbsp;Updates</a></li>
+                                                            <li><a href="./enroll-course.html"><i
+                                                                class="ph-bold ph-gear-six"></i>&nbsp;Enroll Courses</a></li>
+                                            <li><a
+                                                    href="./purchase_history.html"><i
+                                                        class="ph-bold ph-gear-six"></i>&nbsp;Purchase
+                                                    History</a></li>
+                                            <li><a href="#"><i
+                                                        class="ph-bold ph-sign-out"></i>&nbsp;Log
+                                                    Out</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="header-menu-bar d-xl-none ml-10">
                                     <span
@@ -817,6 +871,33 @@
             });
         });
         
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var currentPage = window.location.pathname.split("/").pop();
+                var navLinks = document.querySelectorAll(".h3_main-menu ul li a");
+    
+                navLinks.forEach(function (link) {
+                    if (link.getAttribute("href") === currentPage) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+    
+            let profileSection = document.querySelector('.view-profile-section');
+            let dropdownMenu = document.querySelector('.view-profile-section .menu');
+    
+            profileSection.onclick = function (event) {
+                event.stopPropagation();  // Prevent the click event from bubbling up to the document
+                dropdownMenu.classList.toggle('active');
+            };
+    
+            document.onclick = function (event) {
+                if (!profileSection.contains(event.target)) {
+                    dropdownMenu.classList.remove('active');
+                }
+            };
+    
         </script>
 
     </body>
