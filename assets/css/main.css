@@ -23522,6 +23522,7 @@ textarea:focus::placeholder {
   color: #000;
   font-size: 18px;
   font-weight: 500;
+  margin-bottom: 0px;
 }
 
 /* .settings-link, .settings-link:hover, .settings-link:active {
@@ -23621,4 +23622,15 @@ textarea:focus::placeholder {
   font-weight: 400;
   margin-bottom: 0px;
   text-transform: uppercase;
+}
+
+.settings-link {
+  color: #ee2e61;
+  padding-right: 15px;
+  font-size: 14px;
+}
+
+.settings-link:hover {
+  text-decoration: underline;
+  color: #ee2e61;
 }

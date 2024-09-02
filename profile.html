@@ -76,10 +76,10 @@
                                         <li>
                                             <a href="course.html">Courses</a>
                                         </li>
-                                        <li><a href="#">Gallery</a></li>
+                                        <!-- <li><a href="#">Gallery</a></li>
                                         <li class>
                                             <a href="#">Services</a>
-                                        </li>
+                                        </li> -->
                                         <li><a href="#">Contact</a></li>
                                     </ul>
                                 </nav>
@@ -87,10 +87,64 @@
                         </div>
                         <div class="col-xl-3 col-sm-5 col-6">
                             <div class="h3_header-right">
-                                <div class="h3_header-btn d-none d-sm-block">
-                                    <a href="./login.html"
-                                        class="header-btn theme-btn theme-btn-medium theme-btn-3">Login<i
-                                            class="fa-light fa-arrow-up-right"></i></a>
+                                <div
+                                    class="notification-bell-section d-none d-sm-flex"
+                                    onclick="redirectToNotification()">
+                                    <i
+                                        class="fa-regular fa-bell notification-bell-section-icon"></i>
+                                    <div class="notification-dropdown">
+                                        <div class="notification-header d-flex justify-content-between align-items-center">
+                                            <h3>Notifications</h3>
+                                            <a href="./notification.html" class="settings-link">See all</a>
+                                        </div>
+                                        <div
+                                            class="notification-body notificationsection">
+                                            <div
+                                                class="d-flex align-items-center content notificationtimesection">
+                                                <div class="imagesection"
+                                                    style="background-image: url(assets/img/course/3/img-01.png);"></div>
+                                                <div class="text-start col">
+                                                    <h3 class="mb-0">Join RUBA
+                                                        Fashion Academy
+                                                        Today!</h3>
+                                                    <h6 class="mb-0 mt-1">Today</h6>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div
+                                                class="d-flex align-items-center content notificationtimesection">
+                                                <div class="imagesection"
+                                                    style="background-image: url(assets/img/course/3/img-02.png);"></div>
+                                                <div class="text-start col">
+                                                    <h3 class="mb-0">Craftsmanship Awaits You!</h3>
+                                                    <h6 class="mb-0 mt-1">Yesterday</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="h3_header-btn d-none d-sm-flex view-profile-section">
+                                    D
+                                    <div class="menu">
+                                        <ul>
+                                            <li><a href="./profile1.html"><i
+                                                        class="ph-bold ph-gear-six"></i>&nbsp;Profile</a></li>
+                                            <li><a href="./setting.html"><i
+                                                        class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
+                                                        <!-- <li><a href="./updates.html"><i
+                                                            class="ph-bold ph-gear-six"></i>&nbsp;Updates</a></li> 
+                                                            <li><a href="./enroll-course.html"><i
+                                                                class="ph-bold ph-gear-six"></i>&nbsp;Enroll Courses</a></li>-->
+                                            <li><a
+                                                    href="./purchase_history.html"><i
+                                                        class="ph-bold ph-gear-six"></i>&nbsp;Purchase
+                                                    History</a></li>
+                                            <li><a href="#"><i
+                                                        class="ph-bold ph-sign-out"></i>&nbsp;Log
+                                                    Out</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="header-menu-bar d-xl-none ml-10">
                                     <span
@@ -107,14 +161,14 @@
         <!-- header area end -->
 
         <main>
-
             <!-- blog area start -->
             <section class="h3_blog-area pt-60 pb-60">
                 <div class="container">
                     <div class="row align-items-end mb-30">
                         <div class="col-md-9">
                             <div class="section-area-3 mb-0">
-                                <h2 class="section-title mb-0 profile-primary-text-section">Profile</h2>
+                                <h2
+                                    class="section-title mb-0 profile-primary-text-section">Profile</h2>
                             </div>
                         </div>
                     </div>
@@ -133,7 +187,8 @@
                                             accept="image/*" />
                                     </div>
                                 </div>
-                                <div class="d-flex flex-md-column flex-lg-row align-items-center">
+                                <div
+                                    class="d-flex flex-md-column flex-lg-row align-items-center">
                                     <div
                                         class="h3_header-btn d-flex my-3">
                                         <a href="./login.html"
@@ -151,41 +206,25 @@
                                     1MB. Supported formats: JPG, GIF, or
                                     PNG.</p>
                             </div>
-                            <!-- <div class="p-5 h3_course-item my-3">
-                                <p>Let recruiters know what role you’re looking
-                                    for to make sure you find opportunities that
-                                    are right for you.</p>
-                                <div
-                                    class="h3_header-btn d-flex add-work-preference-section">
-                                    <a href="./login.html"
-                                        class="outline-button-section"><i
-                                            class="fa fa-plus me-2"
-                                            aria-hidden="true"></i>Add work
-                                        preferences</a>
-                                </div>
-                            </div> -->
                             <div class="p-5 h3_course-item my-3">
-                                <h3
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h3
                                     class="additional-info-primary-text">Additional
                                     info</h3>
+                                    <h6 class="edit-section" data-bs-toggle="modal" data-bs-target="#additionalinfoModalCenter"><i class="fa-solid fa-pencil"></i></h6>
+                                </div>                                
                                 <p>Let recruiters know what role you’re looking
                                     for to make sure you find opportunities that
-                                    are right for you.</p>
-                                <div
-                                    class="h3_header-btn d-flex add-additional-info-section">
-                                    <a href="./login.html"
-                                        class="outline-button-section"><i
-                                            class="fa fa-plus me-2"
-                                            aria-hidden="true"></i>Add
-                                        additional info</a>
-                                </div>
+                                    are right for you.</p>    
                             </div>
                         </div>
                         <div
                             class="col-xl-8 col-lg-8 col-md-8 profiledetailssection">
                             <div class="profiledetailscontainersection">
-                                <h3 class="additional-info-primary-text">Profile Details:</h3>
-                                <div class="p-5 h3_course-item" style="overflow: visible;">                                    
+                                <h3 class="additional-info-primary-text">Profile
+                                    Details:</h3>
+                                <div class="p-5 h3_course-item my-3"
+                                    style="overflow: visible;">
                                     <form class="form-capsule" role="form">
                                         <div class="row">
                                             <div class="col-sm-6 mb-3">
@@ -221,22 +260,44 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 mb-3">
-                                                <label for="genderDropdown">Gender</label>
-                                                <div class="form-group dropdown gendersection" style="position: relative;">
-                                                    <button class="btn btn-light form-control dropdown-toggle" type="button" id="genderDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <span id="genderSelectedText">Select Gender</span>
+                                                <label
+                                                    for="genderDropdown">Gender</label>
+                                                <div
+                                                    class="form-group dropdown gendersection"
+                                                    style="position: relative;">
+                                                    <button
+                                                        class="btn btn-light form-control dropdown-toggle"
+                                                        type="button"
+                                                        id="genderDropdown"
+                                                        data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <span
+                                                            id="genderSelectedText">Select
+                                                            Gender</span>
                                                     </button>
-                                                    <div class="dropdown-menu gendersection-menu" aria-labelledby="genderDropdown">
-                                                        <button class="dropdown-item" type="button" data-value="male">Male</button>
-                                                        <button class="dropdown-item" type="button" data-value="female">Female</button>
-                                                        <button class="dropdown-item" type="button" data-value="other">Others</button>
+                                                    <div
+                                                        class="dropdown-menu gendersection-menu"
+                                                        aria-labelledby="genderDropdown">
+                                                        <button
+                                                            class="dropdown-item"
+                                                            type="button"
+                                                            data-value="male">Male</button>
+                                                        <button
+                                                            class="dropdown-item"
+                                                            type="button"
+                                                            data-value="female">Female</button>
+                                                        <button
+                                                            class="dropdown-item"
+                                                            type="button"
+                                                            data-value="other">Others</button>
                                                     </div>
                                                 </div>
-                                            </div>                                                                             
+                                            </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-6 mb-3">
-                                                <label for="pronouns">Phone Number</label>
+                                                <label for="pronouns">Phone
+                                                    Number</label>
                                                 <div class="form-group">
                                                     <input type="text"
                                                         class="form-control"
@@ -245,49 +306,209 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 mb-3">
-                                                <label for="locationDropdown">Location</label>
-                                                <div class="form-group dropdown gendersection" style="position: relative;">
-                                                    <button class="btn btn-light form-control dropdown-toggle" type="button" id="locationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <span id="locationSelectedText">Select your city</span>
+                                                <label
+                                                    for="locationDropdown">Location</label>
+                                                <div
+                                                    class="form-group dropdown gendersection"
+                                                    style="position: relative;">
+                                                    <button
+                                                        class="btn btn-light form-control dropdown-toggle"
+                                                        type="button"
+                                                        id="locationDropdown"
+                                                        data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <span
+                                                            id="locationSelectedText">Select
+                                                            your city</span>
                                                     </button>
-                                                    <div class="dropdown-menu gendersection-menu" aria-labelledby="locationDropdown">
-                                                        <button class="dropdown-item" type="button" data-value="new-york">Chennai</button>
-                                                        <button class="dropdown-item" type="button" data-value="los-angeles">Coimbatore</button>
-                                                        <button class="dropdown-item" type="button" data-value="chicago">Madurai</button>
-                                                        <button class="dropdown-item" type="button" data-value="houston">Salem</button>
-                                                        <button class="dropdown-item" type="button" data-value="miami">Theni</button>
-                                                        <button class="dropdown-item" type="button" data-value="houston">Dindigul</button>
-                                                        <button class="dropdown-item" type="button" data-value="miami">Erode</button>
+                                                    <div
+                                                        class="dropdown-menu gendersection-menu"
+                                                        aria-labelledby="locationDropdown">
+                                                        <button
+                                                            class="dropdown-item"
+                                                            type="button"
+                                                            data-value="new-york">Chennai</button>
+                                                        <button
+                                                            class="dropdown-item"
+                                                            type="button"
+                                                            data-value="los-angeles">Coimbatore</button>
+                                                        <button
+                                                            class="dropdown-item"
+                                                            type="button"
+                                                            data-value="chicago">Madurai</button>
+                                                        <button
+                                                            class="dropdown-item"
+                                                            type="button"
+                                                            data-value="houston">Salem</button>
+                                                        <button
+                                                            class="dropdown-item"
+                                                            type="button"
+                                                            data-value="miami">Theni</button>
+                                                        <button
+                                                            class="dropdown-item"
+                                                            type="button"
+                                                            data-value="houston">Dindigul</button>
+                                                        <button
+                                                            class="dropdown-item"
+                                                            type="button"
+                                                            data-value="miami">Erode</button>
                                                     </div>
                                                 </div>
-                                            </div>                                        
+                                            </div>
                                         </div>
                                     </form>
                                     <div class="mt-5">
                                         <div
                                             class="h3_header-btn d-none d-sm-flex justify-content-start">
                                             <a href="./login.html"
-                                                class="header-btn theme-btn theme-btn-medium theme-btn-3">Save Changes</a>
+                                                class="header-btn theme-btn theme-btn-medium theme-btn-3">Save
+                                                Changes</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="educationdetailscontainersection mt-5">
-                                <h3 class="additional-info-primary-text">Education:</h3>
-                                <div class="p-5 h3_course-item my-3">
-                                    <h5 class="profile-info-sescondary-text">Credentials</h5>
+                                <h3
+                                    class="additional-info-primary-text">Education Qualifications:</h3>
+                                <div class="p-5 h3_course-item my-3" style="overflow: visible;">
                                     <div>
-                                        <p>Add your educational background here to let employers know where you studied or are currently studying.</p>
+                                        <form class="form-capsule" role="form">
+                                            <!-- <h5
+                                                class="profile-info-sescondary-text">Education</h5>
+                                                <p>Add your educational background to let employers know where you studied or are currently studying. Even if you didn’t finish, it’s important to include it here. And if you’ve earned a college degree, you don’t need to add your high school/GED. All fields are optional.</p> -->
+                                            <div class="row">
+                                                <div class="col-sm-6 mb-3">
+                                                    <label for="locationDropdown">Name of institution</label>
+                                                    <div class="form-group dropdown gendersection" style="position: relative;">
+                                                        <button class="btn btn-light form-control dropdown-toggle" type="button" id="locationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span id="locationSelectedText">Select institution</span>
+                                                        </button>
+                                                        <div class="dropdown-menu gendersection-menu" aria-labelledby="locationDropdown">
+                                                            <button class="dropdown-item" type="button" data-value="chennai">Chennai</button>
+                                                            <button class="dropdown-item" type="button" data-value="coimbatore">Coimbatore</button>
+                                                            <button class="dropdown-item" type="button" data-value="madurai">Madurai</button>
+                                                            <button class="dropdown-item" type="button" data-value="salem">Salem</button>
+                                                            <button class="dropdown-item" type="button" data-value="theni">Theni</button>
+                                                            <button class="dropdown-item" type="button" data-value="dindigul">Dindigul</button>
+                                                            <button class="dropdown-item" type="button" data-value="erode">Erode</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 mb-3">
+                                                    <label for="degreeDropdown">Degree</label>
+                                                    <div class="form-group dropdown gendersection" style="position: relative;">
+                                                        <button class="btn btn-light form-control dropdown-toggle" type="button" id="degreeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span id="degreeSelectedText">Select degree</span>
+                                                        </button>
+                                                        <div class="dropdown-menu gendersection-menu" aria-labelledby="degreeDropdown">
+                                                            <button class="dropdown-item" type="button" data-value="bachelors">Bachelor's</button>
+                                                            <button class="dropdown-item" type="button" data-value="masters">Master's</button>
+                                                            <button class="dropdown-item" type="button" data-value="phd">PhD</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <h5
+                                                class="profile-info-sescondary-text">Start
+                                                date</h5>
+                                            <div class="row">
+                                                <div class="col-sm-6 mb-3 monthdropdownsection">
+                                                    <label for="startMonthDropdown">Month</label>
+                                                    <div class="form-group dropdown gendersection" style="position: relative;">
+                                                        <button class="btn btn-light form-control dropdown-toggle" type="button" id="startMonthDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span id="startMonthSelectedText">Select month</span>
+                                                        </button>
+                                                        <div class="dropdown-menu gendersection-menu" aria-labelledby="startMonthDropdown">
+                                                            <button class="dropdown-item" type="button" data-value="january">January</button>
+                                                            <button class="dropdown-item" type="button" data-value="february">February</button>
+                                                            <button class="dropdown-item" type="button" data-value="march">March</button>
+                                                            <button class="dropdown-item" type="button" data-value="april">April</button>
+                                                            <button class="dropdown-item" type="button" data-value="may">May</button>
+                                                            <button class="dropdown-item" type="button" data-value="june">June</button>
+                                                            <button class="dropdown-item" type="button" data-value="july">July</button>
+                                                            <button class="dropdown-item" type="button" data-value="august">August</button>
+                                                            <button class="dropdown-item" type="button" data-value="september">September</button>
+                                                            <button class="dropdown-item" type="button" data-value="october">October</button>
+                                                            <button class="dropdown-item" type="button" data-value="november">November</button>
+                                                            <button class="dropdown-item" type="button" data-value="december">December</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 mb-3 yeardropdownsection">
+                                                    <label for="startYearDropdown">Year</label>
+                                                    <div class="form-group dropdown gendersection" style="position: relative;">
+                                                        <button class="btn btn-light form-control dropdown-toggle" type="button" id="startYearDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span id="startYearSelectedText">Select year</span>
+                                                        </button>
+                                                        <div class="dropdown-menu gendersection-menu" aria-labelledby="startYearDropdown">
+                                                            <!-- Years will be populated by JS -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <h5
+                                                class="profile-info-sescondary-text">End
+                                                date</h5>
+                                            <div class="row">
+                                                <div class="col-sm-6 mb-3 monthdropdownsection">
+                                                    <label for="endMonthDropdown">Month</label>
+                                                    <div class="form-group dropdown gendersection" style="position: relative;">
+                                                        <button class="btn btn-light form-control dropdown-toggle" type="button" id="endMonthDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span id="endMonthSelectedText">Select month</span>
+                                                        </button>
+                                                        <div class="dropdown-menu gendersection-menu" aria-labelledby="endMonthDropdown">
+                                                            <button class="dropdown-item" type="button" data-value="january">January</button>
+                                                            <button class="dropdown-item" type="button" data-value="february">February</button>
+                                                            <button class="dropdown-item" type="button" data-value="march">March</button>
+                                                            <button class="dropdown-item" type="button" data-value="april">April</button>
+                                                            <button class="dropdown-item" type="button" data-value="may">May</button>
+                                                            <button class="dropdown-item" type="button" data-value="june">June</button>
+                                                            <button class="dropdown-item" type="button" data-value="july">July</button>
+                                                            <button class="dropdown-item" type="button" data-value="august">August</button>
+                                                            <button class="dropdown-item" type="button" data-value="september">September</button>
+                                                            <button class="dropdown-item" type="button" data-value="october">October</button>
+                                                            <button class="dropdown-item" type="button" data-value="november">November</button>
+                                                            <button class="dropdown-item" type="button" data-value="december">December</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 mb-3 yeardropdownsection">
+                                                    <label for="endYearDropdown">Year</label>
+                                                    <div class="form-group dropdown gendersection" style="position: relative;">
+                                                        <button class="btn btn-light form-control dropdown-toggle" type="button" id="endYearDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span id="endYearSelectedText">Select year</span>
+                                                        </button>
+                                                        <div class="dropdown-menu gendersection-menu" aria-labelledby="endYearDropdown">
+                                                            <!-- Years will be populated by JS -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="currently-working-here-section mt-2">
+                                                <div class="form-check">
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="checkbox" value
+                                                        id="flexCheckDefault">
+                                                    <label
+                                                        class="form-check-label"
+                                                        for="flexCheckDefault">
+                                                        I currently study here
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
                                         <div
-                                    class="h3_header-btn d-flex add-work-preference-section">
-                                    <a href="./login.html"
-                                        class="outline-button-section"><i
-                                            class="fa fa-plus me-2"
-                                            aria-hidden="true"></i>Add education</a>
-                                </div>
+                                            class="h3_header-btn d-none d-sm-flex justify-content-start mt-5">
+                                            <a href="./login.html"
+                                                class="header-btn theme-btn theme-btn-medium theme-btn-3">Save</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>                                 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -295,6 +516,44 @@
             <!-- blog area end -->
 
         </main>
+
+        <!-- Modal Popup Start -->
+        <div class="modal fade" id="additionalinfoModalCenter" tabindex="-1" aria-labelledby="additionalinfoModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="additionalinfoModalCenterTitle">Additional Info</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body pt-0">
+                        <p>Help employers get to know you better by adding other links and describing what makes you a great candidate.</p>
+                        <div>
+                            <h4 class="modal-body-primary-text">Additional links</h4>
+                            <p>Share up to 5 social media profiles, like Facebook or Linkedin, to highlight your work and experience.</p>
+
+                            <!-- Container for Additional Links -->
+                            <div id="linksContainer">
+                                <!-- Dynamically generated link inputs will appear here -->
+                            </div>
+
+                            <!-- Add Link Button -->
+                            <button type="button" class="btn mt-2" id="addLinkButton">+ Add link</button>
+                        </div>
+                        <div class="mt-3">
+                            <h4 class="modal-body-primary-text">About you</h4>
+                            <p>A personal summary can help recruiters understand your unique strengths.</p>
+                            <textarea rows="6" id="about" name="about" placeholder="Include a few brief details about yourself..." style="width: 100%;padding: 7px 12px;"></textarea>
+                            <h6 class="characters-remaining-text">500 characters remaining</h6>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>          
+        <!-- Modal Popup End -->
+
 
         <!-- footer area start -->
         <footer class="footer-area h3_footer-area">
@@ -483,30 +742,145 @@
         });
 
         document.addEventListener('DOMContentLoaded', function() {
-            // Gender Dropdown
-            const genderOptions = document.querySelectorAll('#genderDropdown ~ .dropdown-menu .dropdown-item');
-            const genderSelectedText = document.getElementById('genderSelectedText');
+            // Function to handle dropdown selection
+            function handleDropdownSelection(dropdownId, selectedTextId) {
+                const options = document.querySelectorAll(`#${dropdownId} ~ .dropdown-menu .dropdown-item`);
+                const selectedText = document.getElementById(selectedTextId);
 
-            genderOptions.forEach(option => {
-                option.addEventListener('click', function() {
-                    genderSelectedText.textContent = this.textContent.trim();
-                    genderSelectedText.setAttribute('data-value', this.getAttribute('data-value'));
+                options.forEach(option => {
+                    option.addEventListener('click', function() {
+                        selectedText.textContent = this.textContent.trim();
+                        selectedText.setAttribute('data-value', this.getAttribute('data-value'));
+                    });
                 });
-            });
+            }
+
+            // Gender Dropdown
+            handleDropdownSelection('genderDropdown', 'genderSelectedText');
 
             // Location Dropdown
-            const locationOptions = document.querySelectorAll('#locationDropdown ~ .dropdown-menu .dropdown-item');
-            const locationSelectedText = document.getElementById('locationSelectedText');
+            handleDropdownSelection('locationDropdown', 'locationSelectedText');
 
-            locationOptions.forEach(option => {
-                option.addEventListener('click', function() {
-                    locationSelectedText.textContent = this.textContent.trim();
-                    locationSelectedText.setAttribute('data-value', this.getAttribute('data-value'));
-                });
-            });
+            // Degree Dropdown
+            handleDropdownSelection('degreeDropdown', 'degreeSelectedText');
+
+            // Month Dropdowns
+            handleDropdownSelection('startMonthDropdown', 'startMonthSelectedText');
+            handleDropdownSelection('endMonthDropdown', 'endMonthSelectedText');
+
+            // Year Dropdowns
+            handleDropdownSelection('startYearDropdown', 'startYearSelectedText');
+            handleDropdownSelection('endYearDropdown', 'endYearSelectedText');
+
+            // Populate Year Dropdowns
+            function populateYearDropdown(dropdownId) {
+                const currentYear = new Date().getFullYear();
+                const dropdownMenu = document.querySelector(`#${dropdownId} ~ .dropdown-menu`);
+                
+                for (let year = currentYear; year >= 1990; year--) {
+                    const yearOption = document.createElement('button');
+                    yearOption.classList.add('dropdown-item');
+                    yearOption.type = 'button';
+                    yearOption.setAttribute('data-value', year);
+                    yearOption.textContent = year;
+                    dropdownMenu.appendChild(yearOption);
+                }
+
+                // Reinitialize the event listeners after adding year options
+                handleDropdownSelection(dropdownId, `${dropdownId}SelectedText`);
+            }
+
+            populateYearDropdown('startYearDropdown');
+            populateYearDropdown('endYearDropdown');
         });
 
     </script>
+    <script>
+        // JavaScript to manage adding and removing links
+        document.addEventListener('DOMContentLoaded', function() {
+            const linksContainer = document.getElementById('linksContainer');
+            const addLinkButton = document.getElementById('addLinkButton');
+            const maxLinks = 5;
+            const socialMediaOptions = ['LinkedIn', 'Facebook', 'Twitter', 'Instagram', 'Dribble'];
+        
+            function createLinkInput() {
+                const linkWrapper = document.createElement('div');
+                linkWrapper.className = 'd-flex align-items-center mb-3';
+                
+                const select = document.createElement('select');
+                select.className = 'form-select me-2';
+                socialMediaOptions.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    select.appendChild(opt);
+                });
+                
+                const input = document.createElement('input');
+                input.type = 'url';
+                input.placeholder = 'https://www.example.com';
+                input.className = 'form-control me-2';
+                
+                const deleteButton = document.createElement('button');
+                deleteButton.className = 'btn btn-outline-danger';
+                deleteButton.innerHTML = '<i class="fa-regular fa-trash-can"></i>';
+                deleteButton.addEventListener('click', function() {
+                    linksContainer.removeChild(linkWrapper);
+                    checkLinksCount();
+                });
+
+                linkWrapper.appendChild(select);
+                linkWrapper.appendChild(input);
+                linkWrapper.appendChild(deleteButton);
+                
+                return linkWrapper;
+            }
+        
+            function checkLinksCount() {
+                if (linksContainer.children.length >= maxLinks) {
+                    addLinkButton.disabled = true;
+                } else {
+                    addLinkButton.disabled = false;
+                }
+            }
+        
+            addLinkButton.addEventListener('click', function() {
+                if (linksContainer.children.length < maxLinks) {
+                    const newLink = createLinkInput();
+                    linksContainer.appendChild(newLink);
+                    checkLinksCount();
+                }
+            });
+        });
+        
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var currentPage = window.location.pathname.split("/").pop();
+                var navLinks = document.querySelectorAll(".h3_main-menu ul li a");
+    
+                navLinks.forEach(function (link) {
+                    if (link.getAttribute("href") === currentPage) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+    
+            let profileSection = document.querySelector('.view-profile-section');
+            let dropdownMenu = document.querySelector('.view-profile-section .menu');
+    
+            profileSection.onclick = function (event) {
+                event.stopPropagation();  // Prevent the click event from bubbling up to the document
+                dropdownMenu.classList.toggle('active');
+            };
+    
+            document.onclick = function (event) {
+                if (!profileSection.contains(event.target)) {
+                    dropdownMenu.classList.remove('active');
+                }
+            };
+    
+        </script>
 
     </body>
 
