@@ -54,7 +54,7 @@
                 <div class="row align-items-center">
                     <div class="col-xl-3 col-sm-7 col-6">
                         <div class="h3_header-logo">
-                            <a href="index.html"><img src="assets/img/logo/logo-ruba.png" alt=""></a>
+                            <a href="index.html"><img src="assets/img/logo/logo-ruba.png" alt></a>
                         </div>
                     </div>
                     <div class="col-xl-6 d-none d-xl-block">
@@ -62,33 +62,77 @@
                             <nav class="h3_main-menu mobile-menu" id="mobile-menu">
                                 <ul>
                                     <li>
-                                        <a href="index.html" class="active">Home</a>
+                                        <a href="index.html">Home</a>
                                     </li>
-                                    <li><a href="#">About</a></li>
+                                    <li><a href="./about.html">About</a></li>
                                     <li>
                                         <a href="course.html">Courses</a>
                                     </li>
-                                    <li><a href="#">Gallery</a></li>
-                                    <li class="">
-                                        <a href="#">Services</a>
+                                    <li>
+                                        <a href="gallery.html">Gallery</a>
                                     </li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
                     <div class="col-xl-3 col-sm-5 col-6">
                         <div class="h3_header-right">
+                            <div class="notification-bell-section d-none d-sm-flex" onclick="redirectToNotification()">
+                                <i class="fa-regular fa-bell notification-bell-section-icon"></i>
+                                <div class="notification-dropdown">
+                                    <div class="notification-header d-flex justify-content-between align-items-center">
+                                        <h3>Notifications</h3>
+                                        <a href="./notification.html" class="settings-link">See all</a>
+                                    </div>
+                                    <div class="notification-body notificationsection">
+                                        <div class="d-flex align-items-center content notificationtimesection">
+                                            <div class="imagesection"
+                                                style="background-image: url(assets/img/course/3/img-01.png);"></div>
+                                            <div class="text-start col">
+                                                <h3 class="mb-0">Join RUBA
+                                                    Fashion Academy
+                                                    Today!</h3>
+                                                <h6 class="mb-0 mt-1">Today</h6>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex align-items-center content notificationtimesection">
+                                            <div class="imagesection"
+                                                style="background-image: url(assets/img/course/3/img-02.png);"></div>
+                                            <div class="text-start col">
+                                                <h3 class="mb-0">Craftsmanship Awaits You!</h3>
+                                                <h6 class="mb-0 mt-1">Yesterday</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="h3_header-btn d-none d-sm-flex view-profile-section">
                                 D
                                 <div class="menu">
                                     <ul>
-                                        <li><a href="#"><i class="ph-bold ph-gear-six"></i>&nbsp;Profile</a></li>
-                                        <li><a href="#"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
-                                        <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Log Out</a></li>
+                                        <li><a href="./profile1.html"><i
+                                                    class="ph-bold ph-gear-six"></i>&nbsp;Profile</a></li>
+                                        <li><a href="./setting.html"><i
+                                                    class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
+                                        <!-- <li><a href="./updates.html"><i
+                                                            class="ph-bold ph-gear-six"></i>&nbsp;Updates</a></li> 
+                                                            <li><a href="./enroll-course.html"><i
+                                                                class="ph-bold ph-gear-six"></i>&nbsp;Enroll Courses</a></li>-->
+                                        <li><a href="./purchase_history.html"><i
+                                                    class="ph-bold ph-gear-six"></i>&nbsp;Purchase
+                                                History</a></li>
+                                        <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Log
+                                                Out</a></li>
                                     </ul>
                                 </div>
-                            </div>                            
+                            </div>
+                            <div class="header-menu-bar d-xl-none ml-10">
+                                <span class="header-menu-bar-icon side-toggle">
+                                    <i class="fa-light fa-bars"></i>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -112,13 +156,16 @@
                                 <div class="section-area-3 small-section-area-3 d-flex">
                                     <div class="user-profile-class">D</div>
                                     <div class="ms-3">
-                                        <h2 class="section-title mb-2">Welcome back, <span class="text-primary">Divya</span></h2>
+                                        <h2 class="section-title mb-2">Welcome back, <span
+                                                class="text-primary">Divya</span></h2>
                                         <p class="section-text">
                                             Ready to make your mark? Let’s create something amazing together!
                                         </p>
                                     </div>
                                 </div>
-                                <h5 class="mb-0"><a href="#" class="add_occupation_and_interests"><i class="fa fa-pencil me-2" aria-hidden="true"></i>Add occupation and interests</a></h5>                                
+                                <h5 class="mb-0"><a href="#" class="add_occupation_and_interests"><i
+                                            class="fa fa-pencil me-2" aria-hidden="true"></i>Add occupation and
+                                        interests</a></h5>
                             </div>
                             <div class="h3_about-img-shape d-none d-sm-block">
                                 <img class="h3_about-img-shape-1" src="assets/img/about/3/shape-1.png" alt="">
@@ -155,7 +202,8 @@
                                     <span><i class="fa-thin fa-user"></i>Hilary Ouse</span>
                                 </div>
                                 <h5 class="h3_blog-content-title"><a href="blog-details.html">Fashion as Design</a></h5>
-                                <p>Uncover how design principles shape fashion, enhance your creative skills, and gain insights into the art of fashion design.</p>
+                                <p>Uncover how design principles shape fashion, enhance your creative skills, and gain
+                                    insights into the art of fashion design.</p>
                                 <div class="mylearning-progressbar-section d-flex align-items-center">
                                     <div class="progress">
                                         <div class="progress-value initial-progress-value"></div>
@@ -165,7 +213,8 @@
                                 <h5 class="overall-progress">Overall Progress</h5>
                             </div>
                             <div class="vertical-line"></div>
-                            <div class="col-xl-2 col-lg-2 col-md-2 h3_blog-content pt-0 ps-4 d-flex align-items-center justify-content-center">
+                            <div
+                                class="col-xl-2 col-lg-2 col-md-2 h3_blog-content pt-0 ps-4 d-flex align-items-center justify-content-center">
                                 <div class="h3_category-section-button">
                                     <a href="#" class="theme-btn theme-btn-medium theme-btn-3">Get Started<i
                                             class="fa-light fa-arrow-up-right"></i></a>
@@ -177,7 +226,7 @@
             </div>
         </section>
         <!-- blog area end -->
-         
+
 
     </main>
 
@@ -265,7 +314,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="copyright-text">
-                            <p>Copyrights © 2024 RUBA FASHION ACADEMY. All rights reserved. Designed by Touchmark Descience Pvt Ltd.</p>
+                            <p>Copyrights © 2024 RUBA FASHION ACADEMY. All rights reserved. Designed by Touchmark
+                                Descience Pvt Ltd.</p>
                         </div>
                     </div>
                 </div>
@@ -276,7 +326,7 @@
 
 
     <!-- JS here -->
-    
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
@@ -294,7 +344,7 @@
         document.addEventListener("DOMContentLoaded", function () {
             var currentPage = window.location.pathname.split("/").pop();
             var navLinks = document.querySelectorAll(".h3_main-menu ul li a");
-    
+
             navLinks.forEach(function (link) {
                 if (link.getAttribute("href") === currentPage) {
                     link.classList.add("active");

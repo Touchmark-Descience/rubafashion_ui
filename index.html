@@ -64,15 +64,14 @@
                                     <li>
                                         <a href="index.html" class="active">Home</a>
                                     </li>
-                                    <li><a href="#">About</a></li>
+                                    <li><a href="./about.html">About</a></li>
                                     <li>
                                         <a href="course.html">Courses</a>
                                     </li>
-                                    <!-- <li><a href="#">Gallery</a></li>
-                                    <li class="">
-                                        <a href="#">Services</a>
-                                    </li> -->
-                                    <li><a href="#">Contact</a></li>
+                                    <li>
+                                        <a href="./gallery.html">Gallery</a>
+                                    </li>
+                                    <li><a href="./contact.html">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -248,7 +247,8 @@
                             <div class="h3_about-content mb-35">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <span><i class="fa-regular fa-check"></i>Specialized in embroidery, aari work, and tailoring</span>
+                                        <span><i class="fa-regular fa-check"></i>Specialized in embroidery, aari work,
+                                            and tailoring</span>
                                     </div>
                                     <div class="col-sm-12">
                                         <span><i class="fa-regular fa-check"></i>Top Fashion Designing Institute in
@@ -329,26 +329,33 @@
                                         <div class="h3_course-content">
                                             <div class="h3_course-item-tag">
                                                 <a href="#">Saree Painting</a>
-                                            </div>                                         
+                                            </div>
                                             <h5 class="h3_course-content-title"><a href="course-details.html">Art of
-                                                Fabric Painting from Scratch</a></h5>
-                                                <h5 class="h3_course-content-description">Learn the fundamentals of fabric painting from scratch in this comprehensive course. Whether you're a beginner or looking to refine your skills, you'll explore various techniques, color blending, and design principles to transform plain fabric into vibrant works of art. Unleash your creativity and create beautiful, custom-painted textiles!</h5>
+                                                    Fabric Painting from Scratch</a></h5>
+                                            <h5 class="h3_course-content-description">Learn the fundamentals of fabric
+                                                painting from scratch in this comprehensive course. Whether you're a
+                                                beginner or looking to refine your skills, you'll explore various
+                                                techniques, color blending, and design principles to transform plain
+                                                fabric into vibrant works of art. Unleash your creativity and create
+                                                beautiful, custom-painted textiles!</h5>
                                             <div class="h3_course-content-info">
                                                 <ul>
                                                     <li><i class="fa-light fa-book-blank"></i>42 Lessons</li>
                                                     <li><i class="fa-light fa-user-group"></i>64 Students</li>
                                                     <li><i class="fa-light fa-clock"></i>20 Hours</li>
                                                 </ul>
-                                            </div>                                            
+                                            </div>
                                             <!-- <div class="h3_course-content-price">
                                                 <span><del>₹120</del>₹96.00</span>
                                             </div> -->
                                             <div class="enroll-now-button-section">
-                                                <a href="#" class="theme-btn theme-btn-medium theme-btn-3">Enroll Now</i></a>
+                                                <a href="#" class="theme-btn theme-btn-medium theme-btn-3">Enroll
+                                                    Now</i></a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-4 h3_course-item-top h3_course-item-img-section">
+                                    <div
+                                        class="col-xl-4 col-lg-4 col-md-4 h3_course-item-top h3_course-item-img-section">
                                         <div class="h3_course-item-img">
                                             <a href="course-details.html"><img src="assets/img/course/3/img-01.png"
                                                     alt=""></a>
@@ -1433,12 +1440,12 @@
                             <h5 class="footer-widget-title">Quick Link</h5>
                             <div class="footer-widget-list">
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Courses</a></li>
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./course.html">Courses</a></li>
                                     <li><a href="#">Gallery</a></li>
                                     <li><a href="#">Services</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="./contact.html">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1489,7 +1496,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="copyright-text">
-                            <p>Copyrights © 2024 RUBA FASHION ACADEMY. All rights reserved. Designed by Touchmark Descience Pvt Ltd.</p>
+                            <p>Copyrights © 2024 RUBA FASHION ACADEMY. All rights reserved. Designed by Touchmark
+                                Descience Pvt Ltd.</p>
                         </div>
                     </div>
                 </div>
@@ -1517,7 +1525,7 @@
         document.addEventListener("DOMContentLoaded", function () {
             var currentPage = window.location.pathname.split("/").pop();
             var navLinks = document.querySelectorAll(".h3_main-menu ul li a");
-    
+
             navLinks.forEach(function (link) {
                 if (link.getAttribute("href") === currentPage) {
                     link.classList.add("active");
